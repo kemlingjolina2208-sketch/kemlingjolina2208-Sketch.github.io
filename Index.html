@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chic Standard | Home • Fashion • Beauty</title>
+  <meta name="description" content="Chic Standard – Inspiration für Home, Fashion und Beauty. Entdecke stilvolle Ideen, Trends und unsere liebsten Finds.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #222;
+      background: #faf8f5;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e8e2dc;
+      padding: 22px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 25px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 70px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 8vw, 82px);
+      font-weight: normal;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: auto;
+      font-size: 18px;
+      color: #666;
+    }
+
+    .categories {
+      max-width: 1100px;
+      margin: 0 auto 80px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .category {
+      background: #fff;
+      border: 1px solid #e8e2dc;
+      padding: 55px 25px;
+      text-align: center;
+      text-decoration: none;
+      color: #222;
+      transition: 0.2s;
+    }
+
+    .category:hover {
+      transform: translateY(-4px);
+    }
+
+    .category h2 {
+      font-size: 30px;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    .category p {
+      color: #777;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .about {
+      background: #eee8e1;
+      text-align: center;
+      padding: 70px 25px;
+    }
+
+    .about h2 {
+      font-size: 38px;
+      font-weight: normal;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      max-width: 650px;
+      margin: auto;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      background: #fff;
+      color: #777;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .categories {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        margin: 45px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">CHIC STANDARD</div>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#fashion">Fashion</a>
+      <a href="#beauty">Beauty</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Chic Standard</h1>
+  <p>
+    Stylish inspiration for your home, wardrobe and beauty routine.
+    Discover beautiful finds, timeless ideas and everyday essentials.
+  </p>
+</section>
+
+<section class="categories">
+
+  <a class="category" id="home" href="#">
+    <h2>Home</h2>
+    <p>Beautiful spaces, decor ideas &amp; home finds.</p>
+  </a>
+
+  <a class="category" id="fashion" href="#">
+    <h2>Fashion</h2>
+    <p>Style inspiration, wardrobe essentials &amp; trends.</p>
+  </a>
+
+  <a class="category" id="beauty" href="#">
+    <h2>Beauty</h2>
+    <p>Beauty favorites, routines &amp; must-have products.</p>
+  </a>
+
+</section>
+
+<section class="about" id="about">
+  <h2>Welcome to Chic Standard</h2>
+
+  <p>
+    Chic Standard is your destination for stylish inspiration,
+    carefully selected finds and simple ideas to make everyday life
+    feel a little more beautiful.
+  </p>
+</section>
+
+<footer>
+  © 2026 Chic Standard · Home · Fashion · Beauty
+</footer>
+
+</body>
+</html>
