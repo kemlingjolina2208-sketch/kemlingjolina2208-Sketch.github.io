@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chic Standard | Home • Fashion • Beauty</title>
-  <meta name="description" content="Chic Standard – Inspiration für Home, Fashion und Beauty. Entdecke stilvolle Ideen, Trends und unsere liebsten Finds.">
+
+  <title>Chic Standard | Timeless Style & Everyday Inspiration</title>
+
+  <meta
+    name="description"
+    content="Chic Standard is your destination for timeless fashion, beauty, home inspiration and carefully selected finds."
+  >
+
+  <meta name="robots" content="index, follow">
 
   <style>
     * {
@@ -13,143 +20,402 @@
       padding: 0;
     }
 
+    :root {
+      --background: #faf8f5;
+      --white: #ffffff;
+      --text: #222222;
+      --muted: #77716b;
+      --border: #e5dfd8;
+      --soft: #eee8e1;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Georgia, "Times New Roman", serif;
-      color: #222;
-      background: #faf8f5;
+      color: var(--text);
+      background: var(--background);
       line-height: 1.6;
     }
 
-    header {
-      background: #fff;
-      border-bottom: 1px solid #e8e2dc;
-      padding: 22px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    nav {
-      max-width: 1100px;
+    /* HEADER */
+
+    header {
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1180px;
       margin: auto;
+      padding: 20px 25px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      justify-content: space-between;
+      gap: 30px;
     }
 
     .logo {
-      font-size: 25px;
-      letter-spacing: 2px;
+      font-size: 22px;
       font-weight: bold;
+      letter-spacing: 3px;
+      white-space: nowrap;
     }
 
-    nav a {
-      color: #333;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 14px;
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
       font-family: Arial, sans-serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
+
+    .nav-links a {
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.55;
+    }
+
+    /* HERO */
 
     .hero {
-      max-width: 1100px;
-      margin: 70px auto;
-      padding: 20px;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 110px 25px 100px;
       text-align: center;
     }
 
-    .hero h1 {
-      font-size: clamp(45px, 8vw, 82px);
-      font-weight: normal;
+    .eyebrow {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
       letter-spacing: 3px;
-      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(50px, 9vw, 100px);
+      font-weight: normal;
+      letter-spacing: 4px;
+      line-height: 1;
+      margin-bottom: 28px;
     }
 
     .hero p {
-      max-width: 620px;
-      margin: auto;
+      max-width: 650px;
+      margin: 0 auto 35px;
+      color: var(--muted);
       font-size: 18px;
-      color: #666;
     }
 
+    .hero-button {
+      display: inline-block;
+      background: var(--text);
+      color: white;
+      padding: 14px 28px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .hero-button:hover {
+      transform: translateY(-2px);
+      opacity: 0.85;
+    }
+
+    /* SECTION */
+
+    .section {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 25px 100px;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 35px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 18px;
+    }
+
+    .section-heading h2 {
+      font-size: 36px;
+      font-weight: normal;
+    }
+
+    .section-heading span {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ARTICLES */
+
+    .articles {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 22px;
+    }
+
+    .article {
+      background: var(--white);
+      border: 1px solid var(--border);
+      min-height: 310px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      transition: transform 0.25s ease;
+    }
+
+    .article:hover {
+      transform: translateY(-5px);
+    }
+
+    .article-large {
+      min-height: 450px;
+      background: var(--soft);
+    }
+
+    .article-category {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .article h3 {
+      font-size: 25px;
+      line-height: 1.25;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    .article p {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* CATEGORIES */
+
     .categories {
-      max-width: 1100px;
-      margin: 0 auto 80px;
-      padding: 20px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
 
     .category {
-      background: #fff;
-      border: 1px solid #e8e2dc;
-      padding: 55px 25px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 65px 25px;
       text-align: center;
-      text-decoration: none;
-      color: #222;
-      transition: 0.2s;
+      transition: transform 0.25s ease;
     }
 
     .category:hover {
-      transform: translateY(-4px);
+      transform: translateY(-5px);
     }
 
-    .category h2 {
-      font-size: 30px;
+    .category-number {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    .category h3 {
+      font-size: 34px;
       font-weight: normal;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .category p {
-      color: #777;
       font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-
-    .about {
-      background: #eee8e1;
-      text-align: center;
-      padding: 70px 25px;
-    }
-
-    .about h2 {
-      font-size: 38px;
-      font-weight: normal;
-      margin-bottom: 15px;
-    }
-
-    .about p {
-      max-width: 650px;
-      margin: auto;
-      color: #555;
-    }
-
-    footer {
-      text-align: center;
-      padding: 35px 20px;
-      background: #fff;
-      color: #777;
-      font-family: Arial, sans-serif;
+      color: var(--muted);
       font-size: 13px;
     }
 
-    @media (max-width: 700px) {
-      nav {
+    /* FINDS */
+
+    .finds {
+      background: var(--soft);
+      padding: 80px 25px;
+      margin-bottom: 100px;
+    }
+
+    .finds-inner {
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    .finds-content {
+      max-width: 650px;
+    }
+
+    .finds h2 {
+      font-size: 45px;
+      font-weight: normal;
+      margin-bottom: 18px;
+    }
+
+    .finds p {
+      color: #5f5954;
+      margin-bottom: 25px;
+    }
+
+    .text-link {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-bottom: 1px solid var(--text);
+      padding-bottom: 5px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 25px 110px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 42px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      padding: 45px 25px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-size: 18px;
+      letter-spacing: 3px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 25px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .copyright {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      color: #999;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .nav {
+        flex-direction: column;
+        padding: 18px 15px;
+        gap: 15px;
+      }
+
+      .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 11px;
+      }
+
+      .hero {
+        padding: 75px 20px 70px;
+      }
+
+      .hero h1 {
+        letter-spacing: 2px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section {
+        padding: 0 20px 75px;
+      }
+
+      .section-heading {
+        align-items: start;
         flex-direction: column;
       }
 
-      nav a {
-        margin: 0 7px;
+      .articles {
+        grid-template-columns: 1fr;
+      }
+
+      .article-large {
+        min-height: 350px;
       }
 
       .categories {
         grid-template-columns: 1fr;
       }
 
-      .hero {
-        margin: 45px auto;
+      .finds {
+        padding: 60px 20px;
+        margin-bottom: 75px;
+      }
+
+      .finds h2 {
+        font-size: 36px;
+      }
+
+      .about {
+        padding-bottom: 80px;
+      }
+
+      .about h2 {
+        font-size: 34px;
       }
     }
   </style>
@@ -157,59 +423,267 @@
 
 <body>
 
-<header>
-  <nav>
-    <div class="logo">CHIC STANDARD</div>
+  <!-- HEADER -->
 
-    <div>
-      <a href="#home">Home</a>
-      <a href="#fashion">Fashion</a>
-      <a href="#beauty">Beauty</a>
-      <a href="#about">About</a>
+  <header>
+    <nav class="nav">
+
+      <a href="index.html" class="logo">
+        CHIC STANDARD
+      </a>
+
+      <div class="nav-links">
+        <a href="#articles">Journal</a>
+        <a href="#fashion">Fashion</a>
+        <a href="#beauty">Beauty</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+
+  <main>
+
+    <section class="hero">
+
+      <div class="eyebrow">
+        Style · Beauty · Home
+      </div>
+
+      <h1>
+        Chic Standard
+      </h1>
+
+      <p>
+        Timeless inspiration, beautiful finds and elevated ideas
+        for everyday living.
+      </p>
+
+      <a href="#articles" class="hero-button">
+        Explore the Journal
+      </a>
+
+    </section>
+
+
+    <!-- LATEST ARTICLES -->
+
+    <section class="section" id="articles">
+
+      <div class="section-heading">
+        <h2>Latest Inspiration</h2>
+        <span>From the Journal</span>
+      </div>
+
+      <div class="articles">
+
+        <a href="#" class="article article-large">
+          <div>
+            <div class="article-category">
+              Fashion
+            </div>
+
+            <h3>
+              10 Timeless Style Ideas That Always Look Chic
+            </h3>
+
+            <p>
+              Simple wardrobe inspiration for an effortlessly
+              polished look.
+            </p>
+          </div>
+        </a>
+
+
+        <a href="#" class="article">
+
+          <div>
+            <div class="article-category">
+              Beauty
+            </div>
+
+            <h3>
+              Beauty Essentials Worth Having
+            </h3>
+
+            <p>
+              Everyday favorites and simple beauty ideas.
+            </p>
+          </div>
+
+        </a>
+
+
+        <a href="#" class="article">
+
+          <div>
+            <div class="article-category">
+              Home
+            </div>
+
+            <h3>
+              How to Make Your Home Feel More Elegant
+            </h3>
+
+            <p>
+              Small details that can transform your space.
+            </p>
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="section">
+
+      <div class="section-heading">
+        <h2>Explore Chic Standard</h2>
+        <span>Discover your style</span>
+      </div>
+
+      <div class="categories">
+
+        <a href="#fashion" class="category">
+
+          <div class="category-number">
+            01
+          </div>
+
+          <h3>Fashion</h3>
+
+          <p>
+            Timeless outfits, wardrobe essentials,
+            trends and style inspiration.
+          </p>
+
+        </a>
+
+
+        <a href="#beauty" class="category">
+
+          <div class="category-number">
+            02
+          </div>
+
+          <h3>Beauty</h3>
+
+          <p>
+            Beauty favorites, routines,
+            essentials and product discoveries.
+          </p>
+
+        </a>
+
+
+        <a href="#home" class="category">
+
+          <div class="category-number">
+            03
+          </div>
+
+          <h3>Home</h3>
+
+          <p>
+            Elegant interiors, decor inspiration
+            and beautiful home finds.
+          </p>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- CHIC FINDS -->
+
+    <section class="finds">
+
+      <div class="finds-inner">
+
+        <div class="finds-content">
+
+          <div class="eyebrow">
+            Carefully Selected
+          </div>
+
+          <h2>
+            Chic Finds
+          </h2>
+
+          <p>
+            Discover pieces we love — from wardrobe staples
+            and beauty favorites to beautiful details for your home.
+          </p>
+
+          <a href="#" class="text-link">
+            Explore our finds
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+      <div class="eyebrow">
+        About Chic Standard
+      </div>
+
+      <h2>
+        Style should feel effortless.
+      </h2>
+
+      <p>
+        Chic Standard is a destination for timeless style,
+        thoughtful beauty and elevated everyday living.
+        We share inspiration, ideas and carefully selected
+        finds designed to make everyday life feel a little
+        more beautiful.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-logo">
+      CHIC STANDARD
     </div>
-  </nav>
-</header>
 
-<section class="hero">
-  <h1>Chic Standard</h1>
-  <p>
-    Stylish inspiration for your home, wardrobe and beauty routine.
-    Discover beautiful finds, timeless ideas and everyday essentials.
-  </p>
-</section>
+    <div class="footer-links">
 
-<section class="categories">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Affiliate Disclosure</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Impressum</a>
 
-  <a class="category" id="home" href="#">
-    <h2>Home</h2>
-    <p>Beautiful spaces, decor ideas &amp; home finds.</p>
-  </a>
+    </div>
 
-  <a class="category" id="fashion" href="#">
-    <h2>Fashion</h2>
-    <p>Style inspiration, wardrobe essentials &amp; trends.</p>
-  </a>
+    <div class="copyright">
+      © 2026 Chic Standard. All rights reserved.
+    </div>
 
-  <a class="category" id="beauty" href="#">
-    <h2>Beauty</h2>
-    <p>Beauty favorites, routines &amp; must-have products.</p>
-  </a>
-
-</section>
-
-<section class="about" id="about">
-  <h2>Welcome to Chic Standard</h2>
-
-  <p>
-    Chic Standard is your destination for stylish inspiration,
-    carefully selected finds and simple ideas to make everyday life
-    feel a little more beautiful.
-  </p>
-</section>
-
-<footer>
-  © 2026 Chic Standard · Home · Fashion · Beauty
-</footer>
+  </footer>
 
 </body>
 </html>
