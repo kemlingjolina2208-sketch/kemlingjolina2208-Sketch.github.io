@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>10 Timeless Wardrobe Essentials Every Woman Needs | Chic Standard</title>
+
+  <meta
+    name="description"
+    content="Discover 10 timeless wardrobe essentials that make getting dressed easier, more polished and effortlessly chic."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --background: #faf8f5;
+      --white: #ffffff;
+      --text: #222222;
+      --muted: #77716b;
+      --border: #e5dfd8;
+      --soft: #eee8e1;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background: var(--background);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.55;
+    }
+
+    /* ARTICLE */
+
+    .article-header {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 90px 25px 60px;
+      text-align: center;
+    }
+
+    .category {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      font-weight: normal;
+      line-height: 1.08;
+      margin-bottom: 25px;
+    }
+
+    .intro {
+      max-width: 650px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .article {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 0 25px 100px;
+    }
+
+    .article-image {
+      width: 100%;
+      min-height: 430px;
+      background: var(--soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .article-image span {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--muted);
+    }
+
+    .article p {
+      font-size: 17px;
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    .article h2 {
+      font-size: 34px;
+      font-weight: normal;
+      margin: 60px 0 18px;
+      line-height: 1.25;
+    }
+
+    .article h3 {
+      font-size: 25px;
+      font-weight: normal;
+      margin: 45px 0 12px;
+    }
+
+    /* PRODUCT BOX */
+
+    .product-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 30px;
+      margin: 30px 0 45px;
+    }
+
+    .product-label {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .product-box h3 {
+      margin: 0 0 10px;
+      font-size: 25px;
+    }
+
+    .product-box p {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .shop-button {
+      display: inline-block;
+      background: var(--text);
+      color: white;
+      padding: 12px 22px;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .shop-button:hover {
+      opacity: 0.8;
+    }
+
+    /* DISCLOSURE */
+
+    .disclosure {
+      background: var(--soft);
+      padding: 25px;
+      margin-top: 60px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #666;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      padding: 45px 25px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .copyright {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      color: #999;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      .nav {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 10px;
+      }
+
+      .article-header {
+        padding: 65px 20px 45px;
+      }
+
+      .article {
+        padding: 0 20px 70px;
+      }
+
+      .article-image {
+        min-height: 280px;
+      }
+
+      .article h2 {
+        font-size: 29px;
+      }
+
+      .article p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <nav class="nav">
+
+      <a href="index.html" class="logo">
+        CHIC STANDARD
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="fashion.html">Fashion</a>
+        <a href="#">Beauty</a>
+        <a href="#">Home</a>
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ARTICLE HEADER -->
+
+  <section class="article-header">
+
+    <div class="category">
+      Fashion
+    </div>
+
+    <h1>
+      10 Timeless Wardrobe Essentials Every Woman Needs
+    </h1>
+
+    <p class="intro">
+      Building a wardrobe does not have to mean buying more.
+      These timeless essentials make it easier to create
+      polished outfits season after season.
+    </p>
+
+  </section>
+
+
+  <!-- ARTICLE -->
+
+  <article class="article">
+
+    <div class="article-image">
+      <span>
+        Editorial Image Coming Soon
+      </span>
+    </div>
+
+
+    <p>
+      The best wardrobes are often built around a small collection
+      of versatile pieces. Instead of chasing every trend, focus on
+      clothing that can be styled in different ways and worn for years.
+    </p>
+
+    <p>
+      From a perfectly cut blazer to a classic pair of loafers,
+      these wardrobe essentials can become the foundation of an
+      effortless everyday style.
+    </p>
+
+
+    <h2>
+      1. The Classic Blazer
+    </h2>
+
+    <p>
+      A well-fitting blazer instantly makes an outfit feel more polished.
+      Wear it with jeans and a simple top for an elevated everyday look,
+      or pair it with tailored trousers for something more refined.
+    </p>
+
+    <div class="product-box">
+
+      <div class="product-label">
+        Chic Find
+      </div>
+
+      <h3>
+        The Timeless Blazer
+      </h3>
+
+      <p>
+        Look for a clean silhouette, neutral color and quality fabric
+        that can work with both casual and dressier outfits.
+      </p>
+
+      <!-- Replace # with your affiliate link later -->
+
+      <a href="#" class="shop-button">
+        Shop the Look
+      </a>
+
+    </div>
+
+
+    <h2>
+      2. A Crisp White Shirt
+    </h2>
+
+    <p>
+      A white shirt is one of the easiest pieces to style.
+      Wear it tucked into trousers, layered under a sweater,
+      or casually with denim.
+    </p>
+
+
+    <div class="product-box">
+
+      <div class="product-label">
+        Chic Find
+      </div>
+
+      <h3>
+        The Perfect White Shirt
+      </h3>
+
+      <p>
+        Choose a slightly relaxed fit for maximum versatility
+        and an effortlessly elegant silhouette.
+      </p>
+
+      <a href="#" class="shop-button">
+        Shop the Look
+      </a>
+
+    </div>
+
+
+    <h2>
+      3. Straight-Leg Jeans
+    </h2>
+
+    <p>
+      A classic pair of straight-leg jeans can work with almost
+      everything in your wardrobe. Choose a timeless wash and
+      a comfortable, flattering fit.
+    </p>
+
+
+    <h2>
+      4. Classic Loafers
+    </h2>
+
+    <p>
+      Loafers add a polished touch to simple outfits while remaining
+      comfortable enough for everyday wear.
+    </p>
+
+
+    <h2>
+      5. A Structured Handbag
+    </h2>
+
+    <p>
+      A structured handbag can make even a simple outfit feel more
+      considered. Neutral shades such as black, brown or cream are
+      particularly versatile.
+    </p>
+
+
+    <h2>
+      6. The Little Black Dress
+    </h2>
+
+    <p>
+      A simple black dress is a reliable choice for dinners,
+      events and occasions when you want something elegant
+      without overthinking your outfit.
+    </p>
+
+
+    <h2>
+      7. A Neutral Knit Sweater
+    </h2>
+
+    <p>
+      A soft neutral sweater is perfect for layering and can be
+      styled with jeans, skirts or tailored trousers.
+    </p>
+
+
+    <h2>
+      8. Classic Sunglasses
+    </h2>
+
+    <p>
+      Choose a shape that complements your face and a design
+      that will still feel timeless several seasons from now.
+    </p>
+
+
+    <h2>
+      9. Tailored Trousers
+    </h2>
+
+    <p>
+      Tailored trousers instantly create a more polished silhouette.
+      Pair them with a simple T-shirt, blouse or blazer.
+    </p>
+
+
+    <h2>
+      10. Minimal Jewelry
+    </h2>
+
+    <p>
+      A few simple jewelry pieces can become everyday signatures.
+      Think delicate earrings, a classic watch or a simple necklace.
+    </p>
+
+
+    <h2>
+      The Chic Standard
+    </h2>
+
+    <p>
+      A timeless wardrobe is not about owning everything.
+      It is about choosing pieces that work together and make
+      getting dressed feel effortless.
+    </p>
+
+
+    <!-- DISCLOSURE -->
+
+    <div class="disclosure">
+
+      <strong>Affiliate Disclosure:</strong>
+
+      Some links on Chic Standard may be affiliate links.
+      If you make a purchase through one of these links,
+      we may earn a commission at no additional cost to you.
+
+    </div>
+
+  </article>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-logo">
+      CHIC STANDARD
+    </div>
+
+    <div class="footer-links">
+
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Affiliate Disclosure</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Impressum</a>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Chic Standard. All rights reserved.
+    </div>
+
+  </footer>
+
+</body>
+</html>
