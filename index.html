@@ -90,6 +90,7 @@
       opacity: 0.55;
     }
 
+
     /* HERO */
 
     .hero {
@@ -118,27 +119,11 @@
 
     .hero p {
       max-width: 650px;
-      margin: 0 auto 35px;
+      margin: 0 auto;
       color: var(--muted);
       font-size: 18px;
     }
 
-    .hero-button {
-      display: inline-block;
-      background: var(--text);
-      color: white;
-      padding: 14px 28px;
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      transition: transform 0.2s ease, opacity 0.2s ease;
-    }
-
-    .hero-button:hover {
-      transform: translateY(-2px);
-      opacity: 0.85;
-    }
 
     /* SECTION */
 
@@ -171,7 +156,8 @@
       letter-spacing: 1px;
     }
 
-    /* ARTICLES */
+
+    /* LATEST ARTICLES */
 
     .articles {
       display: grid;
@@ -180,14 +166,17 @@
     }
 
     .article {
-      background: var(--white);
-      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
       min-height: 310px;
       padding: 30px;
       display: flex;
       flex-direction: column;
       justify-content: end;
+      border: 1px solid var(--border);
+      background: var(--soft);
       transition: transform 0.25s ease;
+      isolation: isolate;
     }
 
     .article:hover {
@@ -196,7 +185,44 @@
 
     .article-large {
       min-height: 450px;
-      background: var(--soft);
+    }
+
+    .article::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      filter: blur(1.5px);
+      transform: scale(1.04);
+      z-index: -2;
+    }
+
+    .article::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(250, 248, 245, 0.55);
+      z-index: -1;
+    }
+
+    /* IMAGE PLACEHOLDERS */
+
+    .article-fashion::before {
+      background-image: url("images/fashion-cover.jpg");
+    }
+
+    .article-beauty::before {
+      background-image: url("images/beauty-cover.jpg");
+    }
+
+    .article-home::before {
+      background-image: url("images/home-cover.jpg");
+    }
+
+    .article-content {
+      position: relative;
+      z-index: 2;
     }
 
     .article-category {
@@ -217,9 +243,10 @@
 
     .article p {
       font-family: Arial, sans-serif;
-      color: var(--muted);
+      color: #5f5954;
       font-size: 13px;
     }
+
 
     /* CATEGORIES */
 
@@ -230,15 +257,57 @@
     }
 
     .category {
-      background: var(--white);
-      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+      min-height: 300px;
       padding: 65px 25px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid var(--border);
+      isolation: isolate;
       transition: transform 0.25s ease;
     }
 
     .category:hover {
       transform: translateY(-5px);
+    }
+
+    .category::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      filter: blur(2px);
+      transform: scale(1.05);
+      z-index: -2;
+    }
+
+    .category::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(250, 248, 245, 0.62);
+      z-index: -1;
+    }
+
+    .category-fashion::before {
+      background-image: url("images/fashion-cover.jpg");
+    }
+
+    .category-beauty::before {
+      background-image: url("images/beauty-cover.jpg");
+    }
+
+    .category-home::before {
+      background-image: url("images/home-cover.jpg");
+    }
+
+    .category-content {
+      position: relative;
+      z-index: 2;
     }
 
     .category-number {
@@ -257,9 +326,10 @@
 
     .category p {
       font-family: Arial, sans-serif;
-      color: var(--muted);
+      color: #5f5954;
       font-size: 13px;
     }
+
 
     /* FINDS */
 
@@ -298,6 +368,7 @@
       padding-bottom: 5px;
     }
 
+
     /* ABOUT */
 
     .about {
@@ -317,6 +388,7 @@
       color: var(--muted);
       font-size: 17px;
     }
+
 
     /* FOOTER */
 
@@ -350,6 +422,7 @@
       font-size: 11px;
       color: #999;
     }
+
 
     /* MOBILE */
 
@@ -401,6 +474,10 @@
         grid-template-columns: 1fr;
       }
 
+      .category {
+        min-height: 280px;
+      }
+
       .finds {
         padding: 60px 20px;
         margin-bottom: 75px;
@@ -421,26 +498,37 @@
   </style>
 </head>
 
+
 <body>
 
   <!-- HEADER -->
 
   <header>
+
     <nav class="nav">
 
       <a href="index.html" class="logo">
-        CHIC STANDARD
+        - CHIC STANDARD -
       </a>
 
       <div class="nav-links">
-        <a href="#articles">Journal</a>
-        <a href="fashion.html">Fashion</a>
-        <a href="beauty-upgrades.html">Beauty</a>
-        <a href="pinterest-worthy-home.html">Home</a>
-        <a href="about.html">About</a>
+
+        <a href="fashion.html">
+          Fashion
+        </a>
+
+        <a href="beauty-upgrades.html">
+          Beauty
+        </a>
+
+        <a href="pinterest-worthy-home.html">
+          Home
+        </a>
+
       </div>
 
     </nav>
+
   </header>
 
 
@@ -463,75 +551,90 @@
         for everyday living.
       </p>
 
-      <a href="#articles" class="hero-button">
-        Explore the Journal
-      </a>
-
     </section>
 
 
-    <!-- LATEST ARTICLES -->
+    <!-- LATEST INSPIRATION -->
 
     <section class="section" id="articles">
 
       <div class="section-heading">
-        <h2>Latest Inspiration</h2>
-        <span>From the Journal</span>
+
+        <h2>
+          Latest Inspiration
+        </h2>
+
       </div>
+
 
       <div class="articles">
 
-        <a href="fasion.html" class="article article-large">
-          <div>
+
+        <!-- FASHION -->
+
+        <a href="fashion.html" class="article article-large article-fashion">
+
+          <div class="article-content">
+
             <div class="article-category">
               Fashion
             </div>
 
             <h3>
-              10 Timeless Wardrobe Essentials that every Women needs
+              10 Timeless Wardrobe Essentials Every Woman Needs
             </h3>
 
             <p>
               Simple wardrobe inspiration for an effortlessly
               polished look.
             </p>
+
           </div>
+
         </a>
 
 
-        <a href="beauty-upgrades.html" class="article">
+        <!-- BEAUTY -->
 
-          <div>
+        <a href="beauty-upgrades.html" class="article article-beauty">
+
+          <div class="article-content">
+
             <div class="article-category">
               Beauty
             </div>
 
             <h3>
-             7 Beauty Upgrades that make a big difference
+              7 Beauty Upgrades That Make a Big Difference
             </h3>
 
             <p>
               Everyday favorites and simple beauty ideas.
             </p>
+
           </div>
 
         </a>
 
 
-        <a href="pinterest-worthy-home.html" class="article">
+        <!-- HOME -->
 
-          <div>
+        <a href="pinterest-worthy-home.html" class="article article-home">
+
+          <div class="article-content">
+
             <div class="article-category">
               Home
             </div>
 
             <h3>
-              How to create a Pinterest worthy Home
+              How to Create a Pinterest-Worthy Home
             </h3>
 
             <p>
               Small details that can transform your space.
             </p>
+
           </div>
 
         </a>
@@ -541,61 +644,94 @@
     </section>
 
 
-    <!-- CATEGORIES -->
+    <!-- EXPLORE CHIC STANDARD -->
 
     <section class="section">
 
       <div class="section-heading">
-        <h2>Explore Chic Standard</h2>
-        <span>Discover your style</span>
+
+        <h2>
+          Explore Chic Standard
+        </h2>
+
+        <span>
+          Discover your style
+        </span>
+
       </div>
+
 
       <div class="categories">
 
-        <a href="fashion.html" class="category">
 
-          <div class="category-number">
-            01
+        <!-- FASHION CATEGORY -->
+
+        <a href="fashion.html" class="category category-fashion">
+
+          <div class="category-content">
+
+            <div class="category-number">
+              01
+            </div>
+
+            <h3>
+              Fashion
+            </h3>
+
+            <p>
+              Timeless outfits, wardrobe essentials,
+              trends and style inspiration.
+            </p>
+
           </div>
-
-          <h3>Fashion</h3>
-
-          <p>
-            Timeless outfits, wardrobe essentials,
-            trends and style inspiration.
-          </p>
 
         </a>
 
 
-        <a href="beauty-upgrades.html" class="category">
+        <!-- BEAUTY CATEGORY -->
 
-          <div class="category-number">
-            02
+        <a href="beauty-upgrades.html" class="category category-beauty">
+
+          <div class="category-content">
+
+            <div class="category-number">
+              02
+            </div>
+
+            <h3>
+              Beauty
+            </h3>
+
+            <p>
+              Beauty favorites, routines,
+              essentials and product discoveries.
+            </p>
+
           </div>
-
-          <h3>Beauty</h3>
-
-          <p>
-            Beauty favorites, routines,
-            essentials and product discoveries.
-          </p>
 
         </a>
 
 
-        <a href="pinterst-worthy-home.html" class="category">
+        <!-- HOME CATEGORY -->
 
-          <div class="category-number">
-            03
+        <a href="pinterest-worthy-home.html" class="category category-home">
+
+          <div class="category-content">
+
+            <div class="category-number">
+              03
+            </div>
+
+            <h3>
+              Home
+            </h3>
+
+            <p>
+              Elegant interiors, decor inspiration
+              and beautiful home finds.
+            </p>
+
           </div>
-
-          <h3>Home</h3>
-
-          <p>
-            Elegant interiors, decor inspiration
-            and beautiful home finds.
-          </p>
 
         </a>
 
@@ -671,11 +807,25 @@
 
     <div class="footer-links">
 
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
-      <a href="datenschutz.html">Privacy Policy</a>
-      <a href="impressum.html">Impressum</a>
+      <a href="about.html">
+        About
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
+      <a href="affiliate-disclosure.html">
+        Affiliate Disclosure
+      </a>
+
+      <a href="datenschutz.html">
+        Privacy Policy
+      </a>
+
+      <a href="impressum.html">
+        Impressum
+      </a>
 
     </div>
 
