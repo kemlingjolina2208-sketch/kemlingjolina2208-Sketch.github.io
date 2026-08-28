@@ -3,21 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>How to Make Your Bathroom Feel Like a Spa This Fall | Chic Standard</title>
-
   <meta
     name="description"
     content="Create a cozy spa-like bathroom this fall with warm lighting, plush towels, natural textures and simple home upgrades."
   >
-
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
     :root {
       --background: #faf8f5;
       --white: #ffffff;
@@ -27,7 +23,6 @@
       --soft: #eee8e1;
       --accent: #85715e;
     }
-
     body {
       font-family: Georgia, "Times New Roman", serif;
       color: var(--text);
@@ -35,12 +30,10 @@
       line-height: 1.7;
       overflow-x: hidden;
     }
-
     a {
       color: inherit;
       text-decoration: none;
     }
-
     header {
       background: rgba(255,255,255,.97);
       border-bottom: 1px solid var(--border);
@@ -48,7 +41,6 @@
       top: 0;
       z-index: 100;
     }
-
     .nav {
       max-width: 1100px;
       margin: auto;
@@ -58,14 +50,12 @@
       align-items: center;
       gap: 25px;
     }
-
     .logo {
       font-size: 21px;
       font-weight: bold;
       letter-spacing: 3px;
       white-space: nowrap;
     }
-
     .nav-links {
       display: flex;
       gap: 25px;
@@ -74,11 +64,9 @@
       text-transform: uppercase;
       letter-spacing: 1px;
     }
-
     .nav-links a:hover {
       opacity: .55;
     }
-
     .article-header {
       max-width: 900px;
       margin: 0 auto;
@@ -86,7 +74,6 @@
       text-align: center;
       position: relative;
     }
-
     .season-note {
       display: inline-block;
       background: #f1e9df;
@@ -98,7 +85,6 @@
       color: var(--accent);
       margin-bottom: 20px;
     }
-
     .category {
       font-family: Arial, sans-serif;
       font-size: 11px;
@@ -107,28 +93,24 @@
       color: var(--muted);
       margin-bottom: 20px;
     }
-
     h1 {
       font-size: clamp(42px, 7vw, 72px);
       font-weight: normal;
       line-height: 1.08;
       margin-bottom: 25px;
     }
-
     .intro {
       max-width: 680px;
       margin: auto;
       color: var(--muted);
       font-size: 18px;
     }
-
     .article {
       max-width: 850px;
       margin: 0 auto;
       padding: 0 25px 100px;
       position: relative;
     }
-
     .article-image {
       width: 100%;
       min-height: 430px;
@@ -140,7 +122,6 @@
       margin-bottom: 55px;
       border: 1px solid var(--border);
     }
-
     .article-image span {
       font-family: Arial, sans-serif;
       font-size: 12px;
@@ -148,20 +129,17 @@
       letter-spacing: 2px;
       color: var(--muted);
     }
-
     .article p {
       font-size: 17px;
       color: #444;
       margin-bottom: 25px;
     }
-
     .article h2 {
       font-size: 34px;
       font-weight: normal;
       margin: 60px 0 18px;
       line-height: 1.25;
     }
-
     .product-box {
       background: var(--white);
       border: 1px solid var(--border);
@@ -169,7 +147,6 @@
       margin: 30px 0 45px;
       position: relative;
     }
-
     .product-label {
       font-family: Arial, sans-serif;
       font-size: 10px;
@@ -178,19 +155,16 @@
       color: var(--muted);
       margin-bottom: 10px;
     }
-
     .product-box h3 {
       margin: 0 0 10px;
       font-size: 25px;
     }
-
     .product-box p {
       font-family: Arial, sans-serif;
       font-size: 14px;
       color: var(--muted);
       margin-bottom: 20px;
     }
-
     .shop-button {
       display: inline-block;
       background: var(--text);
@@ -201,11 +175,9 @@
       text-transform: uppercase;
       letter-spacing: 1.5px;
     }
-
     .shop-button:hover {
       opacity: .8;
     }
-
     .disclosure {
       background: var(--soft);
       padding: 25px;
@@ -214,27 +186,23 @@
       font-size: 12px;
       color: #666;
     }
-
     .decor {
       position: absolute;
       pointer-events: none;
       opacity: .5;
     }
-
     .leaf-one {
       font-size: 54px;
       top: 110px;
       right: 1%;
       transform: rotate(20deg);
     }
-
     .leaf-two {
       font-size: 42px;
       bottom: 380px;
       left: -15px;
       transform: rotate(-25deg);
     }
-
     .tape {
       position: absolute;
       width: 80px;
@@ -245,21 +213,18 @@
       right: -18px;
       bottom: -10px;
     }
-
     footer {
       background: var(--white);
       border-top: 1px solid var(--border);
       padding: 45px 25px;
       text-align: center;
     }
-
     .footer-logo {
       font-size: 18px;
       font-weight: bold;
       letter-spacing: 3px;
       margin-bottom: 20px;
     }
-
     .footer-links {
       display: flex;
       justify-content: center;
@@ -270,364 +235,296 @@
       color: var(--muted);
       margin-bottom: 20px;
     }
-
     .copyright {
       font-family: Arial, sans-serif;
       font-size: 11px;
       color: #999;
     }
-
     @media (max-width:700px) {
-
       .nav {
         flex-direction: column;
       }
-
       .nav-links {
         gap: 14px;
         flex-wrap: wrap;
         justify-content: center;
         font-size: 10px;
       }
-
       .article-header {
         padding: 60px 20px 45px;
       }
-
       .article {
         padding: 0 20px 70px;
       }
-
       .article-image {
         min-height: 280px;
       }
-
       .article h2 {
         font-size: 29px;
       }
-
       .article p {
         font-size: 16px;
       }
     }
   </style>
 </head>
-
 <body>
-
 <header>
-
   <nav class="nav">
-
     <a href="../index.html" class="logo">
       CHIC STANDARD
     </a>
-
     <div class="nav-links">
       <a href="../index.html">Home</a>
       <a href="../Homepage/fashion.html">Fashion</a>
       <a href="../Homepage/beauty.html">Beauty</a>
       <a href="../Homepage/home.html">Home</a>
     </div>
-
   </nav>
-
 </header>
-
-
 <section class="article-header">
-
   <div class="decor leaf-one">🍂</div>
-
   <div class="season-note">
     cozy days
   </div>
-
   <div class="category">
     Home
   </div>
-
   <h1>
     How to Make Your Bathroom Feel Like a Spa This Fall
   </h1>
-
   <p class="intro">
     Create a cozy, spa-like bathroom with warm textures,
     soft lighting and thoughtful details that make every
     autumn evening feel a little more luxurious.
   </p>
-
 </section>
-
-
 <article class="article">
-
   <div class="decor leaf-two">🌿</div>
-
   <div class="article-image">
-    <span>
-      
-    </span>
+    <span></span>
   </div>
-
-
   <p>
     As the days get cooler, your bathroom can become the perfect
     place to slow down and relax. You do not need a renovation
     or a huge budget to create a more luxurious atmosphere.
   </p>
-
   <p>
     The secret is in the details: warm lighting, soft towels,
     natural materials and a few carefully chosen pieces that
     make everyday routines feel special.
   </p>
-
-
   <h2>
     1. Start With Soft, Warm Lighting
   </h2>
-
   <p>
     Bright overhead lighting can make a bathroom feel cold.
     Instead, add warmer sources of light to create a softer
     and more relaxing atmosphere in the evening.
   </p>
-
   <div class="product-box">
-
     <div class="product-label">
       Home Find
     </div>
-
     <h3>
       Warm LED Candle Set
     </h3>
-
     <p>
       Flickering warm light adds a cozy atmosphere and makes
       an evening bath feel instantly more relaxing.
     </p>
-
     <a href="https://link.amazon/B02SAz4nk" class="shop-button">
       Shop the Find
     </a>
-
     <div class="tape"></div>
-
   </div>
-
-
   <h2>
     2. Upgrade Your Towels
   </h2>
-
   <p>
     Nothing says spa-like quite like soft, fluffy towels.
     Keep your bathroom palette simple with shades of white,
     cream, beige or warm taupe.
   </p>
-
   <div class="product-box">
-
     <div class="product-label">
       Home Find
     </div>
-
     <h3>
       Plush Bath Towel Set
     </h3>
-
     <p>
       Thick, absorbent towels bring a subtle hotel-inspired
       feeling to your everyday routine.
     </p>
-
     <a href="https://link.amazon/B00AdXsoK" class="shop-button">
       Shop the Find
     </a>
-
     <div class="tape"></div>
-
   </div>
-
-
   <h2>
     3. Add a Textured Bath Mat
   </h2>
-
   <p>
     A soft bath mat can instantly make the room feel warmer
     and more inviting, especially during chilly autumn mornings.
   </p>
-
   <div class="product-box">
-
     <div class="product-label">
       Home Find
     </div>
-
     <h3>
       Soft Bath Mat
     </h3>
-
-  <a href="https://link.amazon/B018AF0h2" class="shop-button">
+    <p>
+      Choose a neutral, textured bath mat to add softness
+      and warmth underfoot while keeping the room looking
+      calm and sophisticated.
+    </p>
+    <a href="https://link.amazon/B018AF0h2" class="shop-button">
       Shop the Find
     </a>
-
     <div class="tape"></div>
-
   </div>
-
-
-
   <h2>
     4. Bring In Natural Details
   </h2>
-
   <p>
     Natural materials such as wood, ceramic, glass and greenery
     can make a bathroom feel softer and more sophisticated.
   </p>
-
   <div class="product-box">
-
     <div class="product-label">
       Home Find
     </div>
-
     <h3>
       Minimal Wooden Bath Tray
     </h3>
-
     <p>
       A simple bath tray creates a beautiful spot for a candle,
       book or cup of tea during a relaxing evening.
     </p>
-
     <a href="https://link.amazon/B052HoBog" class="shop-button">
       Shop the Find
     </a>
-
     <div class="tape"></div>
-
   </div>
-
-
   <h2>
     5. Keep Products Beautifully Organized
   </h2>
-
   <p>
     Group everyday products together on a small tray or
     use matching bottles for a cleaner, more intentional look.
   </p>
-
-
+  <div class="product-box">
+    <div class="product-label">
+      Home Find
+    </div>
+    <h3>
+      Minimal Bathroom Tray
+    </h3>
+    <p>
+      A simple decorative tray keeps skincare, hand soap
+      or other everyday essentials together without making
+      your bathroom feel cluttered.
+    </p>
+    <a href="https://link.amazon/B0aG80eBM" class="shop-button">
+      Shop the Find
+    </a>
+    <div class="tape"></div>
+  </div>
   <h2>
     6. Create a Relaxing Bath Ritual
   </h2>
-
   <p>
     Turn an ordinary evening into a small ritual. Dim the lights,
     put your phone away, light a candle and take your time.
   </p>
-
-
+  
   <h2>
     7. Add a Subtle Fall Touch
   </h2>
-
   <p>
     Autumn does not have to mean pumpkin decorations everywhere.
     Instead, introduce the season through warm beige tones,
     amber accessories, eucalyptus branches and natural wood.
   </p>
-
-
+  <div class="product-box">
+    <div class="product-label">
+      Fall Home Find
+    </div>
+    <h3>
+      Amber Glass Bathroom Accessories
+    </h3>
+    <p>
+      Amber glass bottles or containers add a subtle autumn
+      touch while keeping your bathroom looking elegant and
+      cohesive.
+    </p>
+    <a href="https://link.amazon/B0cKiWJlB" class="shop-button">
+      Shop the Find
+    </a>
+    <div class="tape"></div>
+  </div>
   <h2>
     8. Keep the Color Palette Calm
   </h2>
-
   <p>
     Warm white, cream, beige, taupe and soft brown create
     a timeless foundation and help a bathroom feel calm
     rather than cluttered.
   </p>
-
-
   <h2>
     9. Make Everyday Essentials Feel Special
   </h2>
-
   <p>
     A beautiful soap dispenser, a soft hand towel or a
     simple ceramic dish can make even the smallest details
     feel more luxurious.
   </p>
-
-
+  
   <h2>
     10. Leave Some Empty Space
   </h2>
-
   <p>
     A spa-like bathroom should feel peaceful, not crowded.
     Keep a few surfaces intentionally clear and only display
     the things that add to the atmosphere.
   </p>
-
-
+  
   <h2>
     Your Cozy Bathroom Retreat
   </h2>
-
   <p>
     Creating a spa-like bathroom is less about expensive
     renovations and more about atmosphere. Focus on warmth,
     softness and simplicity.
   </p>
-
   <p>
     With a few small changes, your bathroom can become the
     perfect place to unwind on a cool autumn evening.
   </p>
-
-
   <div class="disclosure">
-
     <strong>Affiliate Disclosure:</strong>
-
     Some links on Chic Standard may be affiliate links.
     If you make a purchase through one of these links,
     we may earn a commission at no additional cost to you.
-
   </div>
-
 </article>
-
-
 <footer>
-
   <div class="footer-logo">
     CHIC STANDARD
   </div>
-
   <div class="footer-links">
-
     <a href="../index.html">Home</a>
     <a href="../Homepage/about.html">About</a>
     <a href="../Homepage/affiliate-disclosure.html">Affiliate Disclosure</a>
     <a href="../Homepage/datenschutz.html">Privacy Policy</a>
     <a href="../Homepage/impressum.html">Impressum</a>
-
   </div>
-
   <div class="copyright">
     © 2026 Chic Standard. All rights reserved.
   </div>
-
 </footer>
-
 </body>
 </html>
