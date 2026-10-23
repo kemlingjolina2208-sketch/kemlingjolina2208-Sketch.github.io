@@ -5,12 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>10 Stylish Winter Workout Essentials for the Gym & Running | Chic Standard</title>
-
-  <meta
-    name="description"
-    content="Discover 10 stylish winter workout essentials for the gym and running, from cozy layers and thermal leggings to practical accessories for a polished cold-weather routine."
-  >
+  <title>10 Stylish Winter Workout Essentials | Chic Standard</title>
+  <meta name="description" content="Discover stylish winter workout essentials for the gym and running, including cozy layers, thermal leggings and practical accessories.">
 
   <style>
     * {
@@ -47,7 +43,7 @@
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 10;
     }
 
     .nav {
@@ -74,15 +70,17 @@
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      flex-wrap: wrap;
     }
 
-    .nav-links a:hover {
+    .nav-links a:hover,
+    .footer-links a:hover {
       opacity: .55;
     }
 
     .article-header {
       max-width: 900px;
-      margin: 0 auto;
+      margin: auto;
       padding: 80px 25px 60px;
       text-align: center;
       position: relative;
@@ -110,9 +108,9 @@
     }
 
     h1 {
-      font-size: clamp(42px, 7vw, 72px);
+      font-size: clamp(38px, 7vw, 68px);
       font-weight: normal;
-      line-height: 1.08;
+      line-height: 1.1;
       margin-bottom: 25px;
     }
 
@@ -125,20 +123,18 @@
 
     .article {
       max-width: 850px;
-      margin: 0 auto;
-      padding: 0 25px 100px;
-      position: relative;
+      margin: auto;
+      padding: 0 25px 90px;
     }
 
     .article-image {
-      width: 100%;
-      min-height: 380px;
-      background: var(--soft);
+      min-height: 300px;
+      background: linear-gradient(135deg, #e8e9e6, #f4eee7, #dce2e4);
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      margin-bottom: 55px;
+      margin-bottom: 45px;
       border: 1px solid var(--border);
       padding: 30px;
     }
@@ -149,7 +145,7 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       line-height: 2;
-      color: var(--muted);
+      color: #69757d;
     }
 
     .article p {
@@ -159,9 +155,9 @@
     }
 
     .article h2 {
-      font-size: 34px;
+      font-size: 32px;
       font-weight: normal;
-      margin: 60px 0 18px;
+      margin: 55px 0 18px;
       line-height: 1.25;
     }
 
@@ -169,7 +165,7 @@
       background: var(--white);
       border: 1px solid var(--border);
       padding: 30px;
-      margin: 30px 0 45px;
+      margin: 25px 0 40px;
       position: relative;
     }
 
@@ -183,8 +179,8 @@
     }
 
     .product-box h3 {
-      margin: 0 0 10px;
-      font-size: 25px;
+      margin-bottom: 10px;
+      font-size: 24px;
     }
 
     .product-box p {
@@ -197,7 +193,7 @@
     .shop-button {
       display: inline-block;
       background: var(--text);
-      color: white;
+      color: #ffffff;
       padding: 12px 22px;
       font-family: Arial, sans-serif;
       font-size: 11px;
@@ -221,7 +217,7 @@
     .disclosure {
       background: var(--soft);
       padding: 25px;
-      margin-top: 60px;
+      margin-top: 55px;
       font-family: Arial, sans-serif;
       font-size: 12px;
       color: #666;
@@ -235,32 +231,15 @@
     }
 
     .snow-one {
-      top: 115px;
+      top: 110px;
       right: 2%;
-      font-size: 46px;
+      font-size: 42px;
     }
 
     .snow-two {
       top: 250px;
       left: 2%;
-      font-size: 32px;
-    }
-
-    .snow-three {
-      bottom: 370px;
-      right: 0;
-      font-size: 28px;
-    }
-
-    .tape {
-      position: absolute;
-      width: 80px;
-      height: 22px;
-      background: #e5e4df;
-      opacity: .7;
-      transform: rotate(-8deg);
-      right: -18px;
-      bottom: -10px;
+      font-size: 30px;
     }
 
     footer {
@@ -294,14 +273,13 @@
       color: #999;
     }
 
-    @media (max-width:700px) {
+    @media (max-width: 700px) {
       .nav {
         flex-direction: column;
       }
 
       .nav-links {
         gap: 14px;
-        flex-wrap: wrap;
         justify-content: center;
         font-size: 10px;
       }
@@ -311,15 +289,15 @@
       }
 
       .article {
-        padding: 0 20px 70px;
+        padding: 0 20px 65px;
       }
 
       .article-image {
-        min-height: 260px;
+        min-height: 230px;
       }
 
       .article h2 {
-        font-size: 29px;
+        font-size: 28px;
       }
 
       .article p {
@@ -331,15 +309,11 @@
       }
 
       .snow-one {
-        right: -15px;
+        right: 0;
       }
 
       .snow-two {
-        left: -15px;
-      }
-
-      .tape {
-        right: -8px;
+        left: 0;
       }
     }
   </style>
@@ -349,9 +323,7 @@
 
 <header>
   <nav class="nav">
-    <a href="../index.html" class="logo">
-      CHIC STANDARD
-    </a>
+    <a href="../index.html" class="logo">CHIC STANDARD</a>
 
     <div class="nav-links">
       <a href="../index.html">Home</a>
@@ -363,34 +335,22 @@
 </header>
 
 <section class="article-header">
-
   <div class="snow snow-one">❄</div>
   <div class="snow snow-two">❅</div>
 
-  <div class="season-note">
-    cold days, strong moves
-  </div>
+  <div class="season-note">cold days, strong moves</div>
+  <div class="category">Fashion & Activewear</div>
 
-  <div class="category">
-    Fashion & Activewear
-  </div>
-
-  <h1>
-    10 Stylish Winter Workout Essentials for the Gym & Running
-  </h1>
+  <h1>10 Stylish Winter Workout Essentials for the Gym & Running</h1>
 
   <p class="intro">
-    Cold-weather workouts, but make them chic.
-    From cozy layers and thermal leggings to practical little extras,
-    these are the winter essentials that make getting dressed for the gym
-    or a run feel effortless.
+    Cold-weather workouts, but make them chic. From cozy layers and thermal
+    leggings to practical little extras, these winter essentials make getting
+    dressed for the gym or a run feel effortless.
   </p>
-
 </section>
 
-<article class="article">
-
-  <div class="snow snow-three">❄</div>
+<main class="article">
 
   <div class="article-image">
     <span>
@@ -406,50 +366,28 @@
   </p>
 
   <p>
-    The secret is building a small winter activewear wardrobe around easy
-    layers, practical accessories and a coordinated color palette. Think black,
-    chocolate brown, cream, charcoal and muted grey: timeless shades that mix
-    and match without much effort.
+    Build a winter activewear wardrobe around easy layers, practical accessories
+    and a coordinated color palette. Think black, chocolate brown, cream,
+    charcoal and muted grey: timeless shades that mix and match with ease.
   </p>
 
-  <!-- 1 -->
-
-  <h2>
-    1. Thermal Leggings That Actually Feel Good
-  </h2>
+  <h2>1. Thermal Leggings That Actually Feel Good</h2>
 
   <p>
-    A pair of thermal or brushed-inside leggings is a winter workout staple,
-    especially for outdoor runs and walks to the gym. Look for a comfortable
-    waistband, a fit that stays in place and fabric that lets you move freely.
-    For indoor training, a lighter pair may be more comfortable once you warm up.
+    Thermal or brushed-inside leggings are a winter workout staple, especially
+    for outdoor runs and walks to the gym. Look for a comfortable waistband,
+    a fit that stays in place and fabric that lets you move freely. For indoor
+    training, a lighter pair may be more comfortable once you warm up.
   </p>
 
   <div class="product-box">
     <div class="product-label">Winter Workout Essential</div>
-
     <h3>Thermal High-Waisted Leggings</h3>
-
-    <p>
-      A sleek base for cold-weather runs, walks and layered gym outfits.
-      Black or deep brown makes styling simple.
-    </p>
-
-    <a href="https://link.amazon/B0gPERH4h"
-       class="shop-button"
-       target="_blank"
-       rel="sponsored nofollow noopener">
-      Shop the Find
-    </a>
-
-    <div class="tape"></div>
+    <p>A sleek base for cold-weather runs, walks and layered gym outfits.</p>
+    <a href="https://link.amazon/B0gPERH4h" class="shop-button" target="_blank" rel="sponsored nofollow noopener">Shop the Find</a>
   </div>
 
-  <!-- 2 -->
-
-  <h2>
-    2. A Matching Sports Bra or Workout Top
-  </h2>
+  <h2>2. A Matching Sports Bra or Workout Top</h2>
 
   <p>
     A coordinated base layer makes an outfit look intentional with almost
@@ -460,294 +398,132 @@
 
   <div class="product-box">
     <div class="product-label">The Matching Set</div>
-
     <h3>Minimal Sports Bra or Fitted Training Top</h3>
-
-    <p>
-      A versatile foundation for your gym wardrobe. Choose support and coverage
-      based on your workout and personal comfort.
-    </p>
-
-    <a href="https://link.amazon/B00TBsKX5"
-       class="shop-button"
-       target="_blank"
-       rel="sponsored nofollow noopener">
-      Shop the Find
-    </a>
-
-    <div class="tape"></div>
+    <p>A versatile foundation for your gym wardrobe. Choose support and coverage based on your workout.</p>
+    <a href="https://link.amazon/B00TBsKX5" class="shop-button" target="_blank" rel="sponsored nofollow noopener">Shop the Find</a>
   </div>
 
-  <!-- 3 -->
-
-  <h2>
-    3. A Lightweight Quarter-Zip Layer
-  </h2>
+  <h2>3. A Lightweight Quarter-Zip Layer</h2>
 
   <p>
-    A quarter-zip is one of those pieces that makes activewear feel a little
-    more elevated. Wear it over your workout top on the way to the gym,
-    during your warm-up or on an easy outdoor walk. A close-but-not-tight
-    fit layers neatly without feeling bulky.
+    A quarter-zip makes activewear feel a little more elevated. Wear it over
+    your workout top on the way to the gym, during your warm-up or on an easy
+    outdoor walk. A comfortable fit layers neatly without feeling bulky.
   </p>
 
   <div class="product-box">
     <div class="product-label">Layering Essential</div>
-
     <h3>Soft Quarter-Zip Training Pullover</h3>
-
-    <p>
-      A polished extra layer for warm-ups, cool-downs and the journey
-      to your workout.
-    </p>
-
-    <a href="https://link.amazon/B0il7Sz8D"
-       class="shop-button"
-       target="_blank"
-       rel="sponsored nofollow noopener">
-      Shop the Find
-    </a>
-
-    <div class="tape"></div>
+    <p>A polished extra layer for warm-ups, cool-downs and the journey to your workout.</p>
+    <a href="https://link.amazon/B0il7Sz8D" class="shop-button" target="_blank" rel="sponsored nofollow noopener">Shop the Find</a>
   </div>
 
-  <!-- 4 -->
-
-  <h2>
-    4. A Warm Running Jacket
-  </h2>
+  <h2>4. A Warm Running Jacket</h2>
 
   <p>
-    For outdoor runs, a lightweight running jacket can help take the edge off
-    cold and wind. Look for breathable fabric, a comfortable range of movement
-    and reflective details if you often run in low light. Add layers underneath
-    rather than choosing a jacket so heavy that you overheat once you get moving.
+    For outdoor runs, a lightweight running jacket can help protect against
+    cold and wind. Look for breathable fabric, comfortable movement and
+    reflective details if you often run in low light.
   </p>
 
   <div class="product-box">
     <div class="product-label">For Outdoor Runs</div>
-
     <h3>Lightweight Running Jacket</h3>
-
-    <p>
-      A practical top layer that works with leggings, running tights
-      and your everyday winter activewear.
-    </p>
-
-    <a href="https://link.amazon/B047AsbFM"
-       class="shop-button"
-       target="_blank"
-       rel="sponsored nofollow noopener">
-      Shop the Find
-    </a>
-
-    <div class="tape"></div>
+    <p>A practical top layer that works with leggings and your everyday winter activewear.</p>
+    <a href="https://link.amazon/B047AsbFM" class="shop-button" target="_blank" rel="sponsored nofollow noopener">Shop the Find</a>
   </div>
 
-  <!-- 5 -->
-
-  <h2>
-    5. Running Gloves That Keep Things Simple
-  </h2>
+  <h2>5. Running Gloves That Keep Things Simple</h2>
 
   <p>
-    Cold hands can make the first part of a winter run feel miserable.
-    Lightweight running gloves are easy to stash in a pocket and can make
-    chilly mornings much more comfortable. Touchscreen-friendly fingertips
-    are a useful bonus.
+    Cold hands can make the first part of a winter run uncomfortable.
+    Lightweight running gloves are easy to stash in a pocket. Touchscreen-friendly
+    fingertips are a useful bonus.
   </p>
 
   <div class="product-box">
     <div class="product-label">Small but Essential</div>
-
     <h3>Lightweight Running Gloves</h3>
-
-    <p>
-      Choose a snug pair that lets you move your fingers freely and use
-      your phone without taking them off.
-    </p>
-
-    <a href="https://link.amazon/B0jcsguTU"
-       class="shop-button"
-       target="_blank"
-       rel="sponsored nofollow noopener">
-      Shop the Find
-    </a>
-
-    <div class="tape"></div>
+    <p>Choose a snug pair that lets you move your fingers freely and use your phone.</p>
+    <a href="https://link.amazon/B0jcsguTU" class="shop-button" target="_blank" rel="sponsored nofollow noopener">Shop the Find</a>
   </div>
 
-  <!-- 6 -->
-
-  <h2>
-    6. A Beanie or Ear Warmer
-  </h2>
+  <h2>6. A Beanie or Ear Warmer</h2>
 
   <p>
     A simple beanie adds an effortless finishing touch to a winter running
-    outfit, while an ear warmer can be a better choice if you prefer less
-    coverage. Pick breathable, sweat-friendly fabric and a color that works
-    with your jacket and gloves for a coordinated look.
+    outfit, while an ear warmer offers a lighter alternative. Choose a
+    breathable style in a color that works with your jacket and gloves.
   </p>
 
   <div class="product-box">
     <div class="product-label">Cold-Weather Accessory</div>
-
     <h3>Minimal Running Beanie or Ear Warmer</h3>
-
-    <p>
-      A functional finishing touch in black, grey, cream or another shade
-      that complements your workout layers.
-    </p>
-
-    <a href="https://link.amazon/B0amoJMNz"
-       class="shop-button"
-       target="_blank"
-       rel="sponsored nofollow noopener">
-      Shop the Find
-    </a>
-
-    <div class="tape"></div>
+    <p>A functional finishing touch in black, grey, cream or another complementary shade.</p>
+    <a href="https://link.amazon/B0amoJMNz" class="shop-button" target="_blank" rel="sponsored nofollow noopener">Shop the Find</a>
   </div>
 
-  <!-- 7 -->
-
-  <h2>
-    7. Crew Socks That Add a Sporty Touch
-  </h2>
+  <h2>7. Crew Socks That Add a Sporty Touch</h2>
 
   <p>
-    Crew socks look great peeking out above trainers and can add a little
-    retro, sporty feel to a gym outfit. For training, prioritize a comfortable
-    fit and fabric that manages moisture; avoid socks that bunch or rub
-    inside your shoes.
+    Crew socks can add a retro, sporty feel to a gym outfit. Prioritize a
+    comfortable fit and moisture-managing fabric, and avoid socks that bunch
+    or rub inside your shoes.
   </p>
 
   <div class="product-box">
     <div class="product-label">Everyday Activewear</div>
-
     <h3>Sporty Crew Socks</h3>
-
-    <p>
-      A simple multipack in white, grey or black makes it easy to pull
-      together a coordinated outfit.
-    </p>
-
-    <a href="https://link.amazon/B05B6efle"
-       class="shop-button"
-       target="_blank"
-       rel="sponsored nofollow noopener">
-      Shop the Find
-    </a>
-
-    <div class="tape"></div>
+    <p>A simple multipack in white, grey or black makes it easy to coordinate your outfit.</p>
+    <a href="https://link.amazon/B05B6efle" class="shop-button" target="_blank" rel="sponsored nofollow noopener">Shop the Find</a>
   </div>
 
-  <!-- 8 -->
-
-  <h2>
-    8. Comfortable Trainers for Your Workout
-  </h2>
+  <h2>8. Comfortable Trainers for Your Workout</h2>
 
   <p>
-    The right shoes matter more than any styling detail. Choose trainers
-    designed for the activity you do most: running shoes for your usual
-    running surfaces, or training shoes suited to gym sessions and
-    lateral movement. A neutral color can look beautifully minimal,
-    but fit and function should always come first.
+    The right shoes matter more than any styling detail. Choose running shoes
+    for running and training shoes suited to your gym sessions. Neutral colors
+    can look beautifully minimal, but fit and function should always come first.
   </p>
 
   <div class="product-box">
     <div class="product-label">The Foundation</div>
-
     <h3>Training or Running Shoes</h3>
-
-    <p>
-      Look for a comfortable fit and a design made for your specific
-      workout rather than choosing by appearance alone.
-    </p>
-
-    <a href="https://link.amazon/B0cTvufWj"
-       class="shop-button"
-       target="_blank"
-       rel="sponsored nofollow noopener">
-      Shop the Find
-    </a>
-
-    <div class="tape"></div>
+    <p>Look for a comfortable fit and a design made for your specific workout.</p>
+    <a href="https://link.amazon/B0cTvufWj" class="shop-button" target="_blank" rel="sponsored nofollow noopener">Shop the Find</a>
   </div>
 
-  <!-- 9 -->
-
-  <h2>
-    9. A Roomy, Minimal Gym Bag
-  </h2>
+  <h2>9. A Roomy, Minimal Gym Bag</h2>
 
   <p>
     A good gym bag makes the whole routine feel easier. Choose enough space
-    for your trainers, water bottle, extra layer and small essentials, with
-    pockets that help keep everything organized. A simple black, taupe or
-    grey bag works with almost any activewear look.
+    for your trainers, water bottle, extra layer and small essentials. A simple
+    black, taupe or grey bag works with almost any activewear look.
   </p>
 
   <div class="product-box">
     <div class="product-label">On-the-Go Essential</div>
-
     <h3>Minimal Gym or Weekender Bag</h3>
-
-    <p>
-      A practical carryall for gym days, outdoor layers and the little
-      things you like to keep close.
-    </p>
-
-    <a href="https://link.amazon/B0am6py6l"
-       class="shop-button"
-       target="_blank"
-       rel="sponsored nofollow noopener">
-      Shop the Find
-    </a>
-
-    <div class="tape"></div>
+    <p>A practical carryall for gym days, outdoor layers and your everyday essentials.</p>
+    <a href="https://link.amazon/B0am6py6l" class="shop-button" target="_blank" rel="sponsored nofollow noopener">Shop the Find</a>
   </div>
 
-  <!-- 10 -->
-
-  <h2>
-    10. A Large Water Bottle
-  </h2>
+  <h2>10. A Large Water Bottle</h2>
 
   <p>
-    Hydration still matters when the weather is cold. A reusable bottle
-    that is easy to carry helps you remember to drink before, during and
-    after your session. Choose a size that fits your bag and a lid that
-    feels convenient for your routine.
+    Hydration still matters when the weather is cold. A reusable bottle that
+    is easy to carry helps you remember to drink before, during and after
+    your session. Choose a size that fits your gym bag.
   </p>
 
   <div class="product-box">
     <div class="product-label">Gym-Bag Staple</div>
-
     <h3>Reusable Water Bottle</h3>
-
-    <p>
-      A clean, minimal design is easy to style and practical enough
-      to use every day, not just at the gym.
-    </p>
-
-    <a href="https://link.amazon/B0bqvlXcB"
-       class="shop-button"
-       target="_blank"
-       rel="sponsored nofollow noopener">
-      Shop the Find
-    </a>
-
-    <div class="tape"></div>
+    <p>A clean, minimal design that is practical enough to use every day.</p>
+    <a href="https://link.amazon/B0bqvlXcB" class="shop-button" target="_blank" rel="sponsored nofollow noopener">Shop the Find</a>
   </div>
 
-  <!-- Styling tips -->
-
-  <h2>
-    How to Make Winter Activewear Look Chic
-  </h2>
+  <h2>How to Make Winter Activewear Look Chic</h2>
 
   <p>
     The easiest way to create a polished workout look is to keep the palette
@@ -764,9 +540,9 @@
   </div>
 
   <p>
-    For running outdoors, dress for the conditions and remember that you may
+    For outdoor running, dress for the conditions and remember that you may
     warm up once you start moving. Layers that are easy to unzip or remove
-    are often more comfortable than one very heavy piece. In low light, choose
+    can be more comfortable than one very heavy piece. In low light, choose
     visible or reflective details and make sure your footwear suits the route
     and weather.
   </p>
@@ -785,38 +561,22 @@
     to you.
   </div>
 
-</article>
+</main>
 
 <footer>
-
-  <div class="footer-logo">
-    CHIC STANDARD
-  </div>
+  <div class="footer-logo">CHIC STANDARD</div>
 
   <div class="footer-links">
     <a href="../index.html">Home</a>
-
-    <a href="../Homepage/about.html">
-      About
-    </a>
-
-    <a href="../Homepage/affiliate-disclosure.html">
-      Affiliate Disclosure
-    </a>
-
-    <a href="../Homepage/datenschutz.html">
-      Privacy Policy
-    </a>
-
-    <a href="../Homepage/impressum.html">
-      Impressum
-    </a>
+    <a href="../Homepage/about.html">About</a>
+    <a href="../Homepage/affiliate-disclosure.html">Affiliate Disclosure</a>
+    <a href="../Homepage/datenschutz.html">Privacy Policy</a>
+    <a href="../Homepage/impressum.html">Impressum</a>
   </div>
 
   <div class="copyright">
     © 2026 Chic Standard. All rights reserved.
   </div>
-
 </footer>
 
 </body>
